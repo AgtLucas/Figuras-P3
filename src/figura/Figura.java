@@ -2,13 +2,13 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package figuras;
+package figura;
 
 /**
  *
  * @author AgtLucas
  */
-public class Figuras {
+public class Figura {
 
     /**
      * @param args the command line arguments

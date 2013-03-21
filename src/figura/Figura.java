@@ -8,7 +8,7 @@ package figura;
  *
  * @author AgtLucas
  */
-public abstract class Figura {
+abstract class Figura {
 
     abstract void desenhar();
     

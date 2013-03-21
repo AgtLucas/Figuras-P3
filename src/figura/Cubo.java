@@ -8,25 +8,10 @@ package figura;
  *
  * @author AgtLucas
  */
-public class Quadrado extends Figura2D {
-    
-    private int lado;
-
-    public int getLado() {
-        return lado;
-    }
-
-    public void setLado(int lado) {
-        this.lado = lado;
-    }
+class Cubo extends Figura3D {
 
     @Override
-    double CalcularArea() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    double CalcularPerimetro() {
+    double CalcularVolume() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -34,6 +19,5 @@ public class Quadrado extends Figura2D {
     void desenhar() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
     
 }

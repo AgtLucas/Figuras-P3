@@ -8,18 +8,9 @@ package figura;
  *
  * @author AgtLucas
  */
-public class Triangulo extends Figura2D {
-    
-    private int base;
-    private int altura;
+class PiramideRegular extends Figura3D {
 
-    public int getBase() {
-        return base;
-    }
-
-    public void setBase(int base) {
-        this.base = base;
-    }
+    int altura;
 
     public int getAltura() {
         return altura;
@@ -28,14 +19,9 @@ public class Triangulo extends Figura2D {
     public void setAltura(int altura) {
         this.altura = altura;
     }
-
+    
     @Override
-    double CalcularArea() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    double CalcularPerimetro() {
+    double CalcularVolume() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

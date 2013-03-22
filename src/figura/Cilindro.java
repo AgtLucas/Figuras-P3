@@ -9,6 +9,8 @@ package figura;
  * @author AgtLucas
  */
 class Cilindro extends Figura3D {
+    
+    Circulo circulo = new Circulo();
 
     @Override
     double CalcularVolume() {

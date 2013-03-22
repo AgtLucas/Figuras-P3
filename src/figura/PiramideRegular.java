@@ -10,6 +10,9 @@ package figura;
  */
 class PiramideRegular extends Figura3D {
 
+    Triangulo triangulo = new Triangulo();
+    int base = triangulo.getBase();
+    
     int altura;
 
     public int getAltura() {

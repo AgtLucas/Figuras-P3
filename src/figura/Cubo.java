@@ -9,16 +9,21 @@ package figura;
  * @author AgtLucas
  */
 class Cubo extends Figura3D {
-    Quadrado quadrado = new Quadrado();
+    
+    private Quadrado face;
+    
+    public Cubo(Quadrado quadrado) {
+        this.face = quadrado;
+    }
     
     @Override
     double CalcularVolume() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return (Math.pow(this.face.CalcularPerimetro()/4, 3));
     }
 
     @Override
     void desenhar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Cubo");
     }
     
 }

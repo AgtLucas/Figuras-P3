@@ -12,6 +12,11 @@ public class Triangulo extends Figura2D {
     
     private int base;
     private int altura;
+    
+    public Triangulo(int base, int altura) {
+        this.base = base;
+        this.altura = altura;
+    }
 
     public int getBase() {
         return base;
@@ -31,12 +36,13 @@ public class Triangulo extends Figura2D {
 
     @Override
     double CalcularArea() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return (this.base * this.altura) / 2;
     }
 
     @Override
     double CalcularPerimetro() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        double hyp = (Math.hypot(this.base, this.altura) * 2);
+        return hyp + this.base;
     }
 
     @Override

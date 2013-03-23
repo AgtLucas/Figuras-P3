@@ -10,7 +10,7 @@ package figura;
  */
 public class Circulo extends Figura2D {
     
-    private int raio;
+    private int raio = 10;
 
     public int getRaio() {
         return raio;
@@ -22,17 +22,17 @@ public class Circulo extends Figura2D {
 
     @Override
     double CalcularArea() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return (Math.pow(this.raio, 2) * Math.PI);
     }
 
     @Override
     double CalcularPerimetro() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return this.raio * (2 * Math.PI);
     }
 
     @Override
     void desenhar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Circulo");
     }
     
 }

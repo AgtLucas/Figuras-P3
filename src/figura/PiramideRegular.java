@@ -28,7 +28,7 @@ class PiramideRegular extends Figura3D {
 
     @Override
     void desenhar() {
-        System.out.println();
+        System.out.println("Piramide Regular");
     }
     
 }

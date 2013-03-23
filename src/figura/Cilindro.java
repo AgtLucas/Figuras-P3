@@ -10,16 +10,30 @@ package figura;
  */
 class Cilindro extends Figura3D {
     
-    Circulo circulo = new Circulo();
+    private Circulo circulo;
+    private int altura;
+    
+    public Cilindro(Circulo circulo, int altura) {
+        this.circulo = circulo;
+        this.altura = altura;
+    }
 
+    public int getAltura() {
+        return altura;
+    }
+
+    public void setAltura(int altura) {
+        this.altura = altura;
+    }
+    
     @Override
     double CalcularVolume() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return Math.PI * (Math.pow(this.circulo.getRaio(), 2)) * this.altura;
     }
 
     @Override
     void desenhar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Cilindro");
     }
     
 }

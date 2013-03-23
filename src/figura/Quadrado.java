@@ -12,6 +12,10 @@ public class Quadrado extends Figura2D {
     
     private int lado;
 
+    public Quadrado(int lado) {
+        this.lado = lado;
+    }
+    
     public int getLado() {
         return lado;
     }
@@ -22,17 +26,17 @@ public class Quadrado extends Figura2D {
 
     @Override
     double CalcularArea() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return (Math.pow(this.getLado(), 2));
     }
 
     @Override
     double CalcularPerimetro() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return this.getLado() * 4;
     }
 
     @Override
     void desenhar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Quadrado");
     }
     
     

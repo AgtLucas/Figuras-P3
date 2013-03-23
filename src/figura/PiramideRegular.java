@@ -10,10 +10,8 @@ package figura;
  */
 class PiramideRegular extends Figura3D {
 
-    Triangulo triangulo = new Triangulo();
-    int base = triangulo.getBase();
-    
-    int altura;
+    private Triangulo triangulo;
+    private int altura;
 
     public int getAltura() {
         return altura;
@@ -25,12 +23,12 @@ class PiramideRegular extends Figura3D {
     
     @Override
     double CalcularVolume() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return 0.3334 * (Math.pow(triangulo.getBase(), 2) * this.getAltura());
     }
 
     @Override
     void desenhar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println();
     }
     
 }

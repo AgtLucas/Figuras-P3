@@ -47,7 +47,7 @@ public class Triangulo extends Figura2D {
 
     @Override
     void desenhar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Triangulo");
     }
     
 }

@@ -27,7 +27,7 @@ class Cilindro extends Figura3D {
     }
     
     @Override
-    double CalcularVolume() {
+    double calcularVolume() {
         return Math.PI * (Math.pow(this.circulo.getRaio(), 2)) * this.altura;
     }
 

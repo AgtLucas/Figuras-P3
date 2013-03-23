@@ -10,6 +10,6 @@ package figura;
  */
 abstract class Figura2D extends Figura {
     
-    abstract double CalcularArea();
-    abstract double CalcularPerimetro();
+    abstract double calcularArea();
+    abstract double calcularPerimetro();
 }

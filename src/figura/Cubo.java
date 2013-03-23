@@ -17,8 +17,8 @@ class Cubo extends Figura3D {
     }
     
     @Override
-    double CalcularVolume() {
-        return (Math.pow(this.face.CalcularPerimetro()/4, 3));
+    double calcularVolume() {
+        return (Math.pow(this.face.calcularPerimetro()/4, 3));
     }
 
     @Override

@@ -12,6 +12,11 @@ class PiramideRegular extends Figura3D {
 
     private Triangulo triangulo;
     private int altura;
+    
+    public PiramideRegular(Triangulo triangulo, int altura) {
+        this.triangulo = triangulo;
+        this.altura = altura;
+    }
 
     public int getAltura() {
         return altura;
@@ -22,7 +27,7 @@ class PiramideRegular extends Figura3D {
     }
     
     @Override
-    double CalcularVolume() {
+    double calcularVolume() {
         return 0.3334 * (Math.pow(triangulo.getBase(), 2) * this.getAltura());
     }
 

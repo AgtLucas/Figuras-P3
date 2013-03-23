@@ -25,12 +25,12 @@ public class Quadrado extends Figura2D {
     }
 
     @Override
-    double CalcularArea() {
+    double calcularArea() {
         return (Math.pow(this.getLado(), 2));
     }
 
     @Override
-    double CalcularPerimetro() {
+    double calcularPerimetro() {
         return this.getLado() * 4;
     }
 

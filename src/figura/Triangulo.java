@@ -35,12 +35,12 @@ public class Triangulo extends Figura2D {
     }
 
     @Override
-    double CalcularArea() {
+    double calcularArea() {
         return (this.base * this.altura) / 2;
     }
 
     @Override
-    double CalcularPerimetro() {
+    double calcularPerimetro() {
         double hyp = (Math.hypot(this.base, this.altura) * 2);
         return hyp + this.base;
     }

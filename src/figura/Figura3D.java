@@ -10,5 +10,5 @@ package figura;
  */
 abstract class Figura3D extends Figura {
     
-    abstract double CalcularVolume();
+    abstract double calcularVolume();
 }
